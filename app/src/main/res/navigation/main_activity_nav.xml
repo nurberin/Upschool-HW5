@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/carpmaFragment">
+
+    <fragment
+        android:id="@+id/toplamaFragment"
+        android:name="com.berin.bottomnavhw.ToplamaFragment"
+        android:label="ToplamaFragment"
+        tools:layout="@layout/fragment_toplama">
+        <action
+            android:id="@+id/toplamaGecis"
+            app:destination="@id/tsonucFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tsonucFragment"
+        android:name="com.berin.bottomnavhw.TsonucFragment"
+        android:label="TsonucFragment"
+        tools:layout="@layout/fragment_tsonuc">
+        <argument
+            android:name="toplamSonuc"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/carpmaFragment"
+        android:name="com.berin.bottomnavhw.CarpmaFragment"
+        android:label="CarpmaFragment"
+        tools:layout="@layout/fragment_carpma">
+        <action
+            android:id="@+id/carpmaGecis"
+            app:destination="@id/csonucFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/csonucFragment"
+        android:name="com.berin.bottomnavhw.CsonucFragment"
+        android:label="CsonucFragment"
+        tools:layout="@layout/fragment_csonuc">
+        <argument
+            android:name="carpmaSonuc"
+            app:argType="string" />
+    </fragment>
+</navigation>

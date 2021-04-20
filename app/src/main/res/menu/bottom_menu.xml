@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/carpmaFragment"
+        android:icon="@drawable/carp"
+        android:title="çarp" />
+    <item
+        android:id="@+id/toplamaFragment"
+        android:icon="@drawable/topla"
+        android:title="topla" />
+</menu>
